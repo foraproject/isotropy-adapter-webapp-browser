@@ -1,0 +1,34 @@
+{
+  "author": "Jeswin Kumar <jeswinpk@agilehead.com>",
+  "name": "isotropy-adapter-webapp-browser",
+  "version": "0.0.1",
+  "description": "Isotropy Node.JS Adapter for WebApp plugin.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeswin/isotropy-adapter-webapp-browser.git"
+  },
+  "scripts": {
+    "test": "mocha dist/test/test.js"
+  },
+  "main": "dist/isotropy-adapter-webapp-browser",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-polyfill": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-2": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-relay-plugin-loader": "*",
+    "mocha": "*",
+    "should": "*",
+    "nodefunc-promisify": "*"
+  },
+  "keywords": [
+    "webapp",
+    "adapter",
+    "isomorphic",
+    "isotropy"
+  ]
+}
