@@ -1,6 +1,5 @@
 /* @flow */
 import type { IncomingMessage, ServerResponse } from "./flow/http";;
-import Response from "./response";
 
 export type RenderArgsType = {
   args: Object,
@@ -11,9 +10,16 @@ export type RenderArgsType = {
 }
 
 const render = async function(params: RenderArgsType) : Promise {
-  const { req, args, handler, toHtml, elementSelector, onRender } = params;
-  const dummyResponse = new Response({ args, toHtml, elementSelector, onRender });
-  return handler(req, dummyResponse, args);
+  const { req, res, args, handler, toHtml, elementSelector, onRender } = params;
+  res.on("end", (html) => {
+    if (onRender) {
+      onRender(html);
+    } else {
+      const domNode = document.querySelector(elementSelector);
+      domNode.innerHTML = toHtml ? toHtml(html) : html;
+    }
+  });
+  return handler(req, res, args);
 };
 
 export default {
