@@ -2,9 +2,11 @@
 import type { IncomingMessage, ServerResponse } from "./flow/http";;
 
 export type RenderArgsType = {
+  req: IncomingMessage,
+  res: ServerResponse,
   args: Object,
   handler: (req: IncomingMessage, res: ServerResponse, args: Object) => Promise,
-  toHtml?: (html: string, props: Object) => string,
+  toHtml?: (html: string, props?: Object) => string,
   elementSelector: string;
   onRender: Function;
 }

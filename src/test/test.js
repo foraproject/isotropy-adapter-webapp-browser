@@ -4,7 +4,7 @@ import should from 'should';
 import http from "http";
 import querystring from "querystring";
 import promisify from "nodefunc-promisify";
-import webappAdapter from "../isotropy-adapter-webapp-browser";
+import webappAdapter from "../isotropy-adapter-webapp-in-dom";
 import httpModule from "isotropy-http-in-app";
 
 const { IncomingMessage, ServerResponse } = httpModule;

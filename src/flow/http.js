@@ -24,6 +24,7 @@ export type ServerResponse = {
   writeHead: (code: number, headers: Object) => void;
   write: (data: string) => void;
   end: (data: string) => void;
+  on: (eventName: string, cb: Function) => void;
 }
 
 export type Server = {
