@@ -1,7 +1,7 @@
 {
   "author": "Jeswin Kumar <jeswinpk@agilehead.com>",
   "name": "isotropy-adapter-webapp-in-dom",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Isotropy Node.JS Adapter for WebApp plugin.",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "isotropy-http-in-app": "*",
+    "isotropy-http-in-browser": "*",
     "babel-polyfill": "*",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
