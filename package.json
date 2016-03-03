@@ -1,11 +1,11 @@
 {
   "author": "Jeswin Kumar <jeswinpk@agilehead.com>",
   "name": "isotropy-adapter-webapp-in-dom",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Isotropy Node.JS Adapter for WebApp plugin.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeswin/isotropy-adapter-webapp-in-dom.git"
+    "url": "https://github.com/nodejam/isotropy-adapter-webapp-in-dom.git"
   },
   "scripts": {
     "test": "mocha dist/test/test.js"
@@ -13,6 +13,7 @@
   "main": "dist/isotropy-adapter-webapp-in-dom",
   "license": "MIT",
   "dependencies": {
+    "isotropy-interfaces": "*"
   },
   "devDependencies": {
     "isotropy-http-in-browser": "*",

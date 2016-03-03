@@ -1,5 +1,5 @@
 /* @flow */
-import type { IncomingMessage, ServerResponse } from "./flow/http";;
+import type { IncomingMessage, ServerResponse } from "isotropy-interfaces/node/http";
 
 export type RenderArgsType = {
   req: IncomingMessage,
