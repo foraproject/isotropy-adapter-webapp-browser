@@ -5,7 +5,7 @@
   "description": "Isotropy Node.JS Adapter for WebApp plugin.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodejam/isotropy-adapter-webapp-in-dom.git"
+    "url": "https://github.com/jeswin/isotropy-adapter-webapp-in-dom.git"
   },
   "scripts": {
     "test": "mocha dist/test/test.js"
